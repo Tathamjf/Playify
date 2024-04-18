@@ -1,0 +1,136 @@
+@font-face {
+    font-family: 'Montserrat';
+    src: url(fonts/Montserrat-VariableFont_wght.ttf);
+}
+
+:root {
+    --vermelho-playify: #FF005C;
+    --laranja-gamifica: #f06638;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.container-grid {
+    width: 80vw;
+    max-width: 1400px;
+
+    /* margin: 30px - Espaçamento de 30 px em torno do elemento*/
+    /* margin: 0px 30px - Espaçamento 0px vertical e 30px horizontal*/
+    /* margin: 0px 30px 10px - Espaçamento 0px para cima, 30px horizontal e 10 para baixo*/
+
+    /* margin: 0px 30px 10px 20px- 
+    Espaçamento 0px para cima, 30px para direita e 10 para baixo e 20 para esquerda*/
+    margin: 0 auto;
+}
+
+.banner {
+    height: 100vh;
+
+    background: rgb(5, 7, 59);
+    background: linear-gradient(135deg, rgba(5, 7, 59, 1) 31%, rgba(0, 6, 165, 1) 100%);
+    
+}
+
+header {
+    height: 165px;
+
+}
+
+header div.container-grid {
+    /* Porcentagem - Unidade relativa ao elemento pai */
+    height: 100%;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.banner header img {
+    width: 125px;
+    height: 130px;
+}
+
+.menu {
+    width: 700px;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu a {
+    color: #fff;
+
+    font-family: 'Kdam Thmor Pro';
+    font-size: 20px;
+
+    text-decoration: underline transparent;
+    text-decoration-thickness: 2px;
+
+    transition: 500ms ease;
+}
+
+.menu a:hover {
+    color: var(--vermelho-playify);
+}
+
+.alinhamento {
+    display: flex;
+    justify-content: space-between;
+}
+
+.conteudo-banner {
+    height: calc(100vh - 180px);
+    padding-top: 50px;
+
+    display: flex;
+    align-items: left;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 300px;
+}
+
+.conteudo-banner p {
+    color: white;
+
+    font-family: "MADE Tommy";
+    font-size: 22px;
+}
+
+.conteudo-banner h2 {
+    color: white;
+
+    font-family: "Kdam Thmor Pro";
+    font-size: 26px;
+}
+
+.banner img {
+    width: 600px;
+    height: 565px;
+}
+
+.alinhamento button {
+    width: 90%;
+    height: 40px;
+
+    border: 5px;
+    border-radius: 4px;
+    border-color: var(--vermelho-playify);
+    background-color: none;
+
+    color: white;
+
+    font-family: 'Montserrat';
+    font-size: 17px;
+    font-weight: 60;
+
+    cursor: pointer;
+}
+
