@@ -277,45 +277,50 @@ header div.container-grid {
     display: flex;
     justify-content: space-between;
 
-    padding-top: 280px;
+    padding-top: 200px;
     padding-right: 270px;
 }
 
+#contato .conteudo-contato {
+    text-align: center;
+}
+
+
 #contato h2 {
     color: #fff;
-    font-size: 30px;
+    text-align: center;
+    font-size: 35px;
     font-family: 'Kdam Thmor Pro';
+    font-weight: 100;
+    margin-left: 70px;
 }
 
 #contato img {
-    width: 830px;
-    height: 810px;
+    width: 730px;
+    height: 710px;
 
+    margin-left: 80px;
 }
 
 
 #contato form {
-    margin: 0 auto;
-    padding: 60px 0;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
+    width: 120%;
     border-radius: 80px;
 
     background-color: var(--roxo-gamifica);
     color: #fff;
     font-family: "Montserrat";
+
+    margin-top: 85px;
 }
 
 #contato form label {
     margin-bottom: 15px;
-    font-size: 17px;
+    font-size: 22px;
 }
 
 .campo {
-    width: 60%;
+    width: 100%;
     margin-bottom: 50px;
     text-align: left;
     display: flex;
@@ -324,43 +329,45 @@ header div.container-grid {
 }
 
 .campo input {
-    height: 40px;
+    height: 50px;
 
-    color: #fff;
-    background-color: #351868;
+    color: #2f2f2f;
+    background-color: #F1F1FD;
 
     border: none;
-    border-radius: 4px;
+    border-radius: 30px;
 
     outline: none;
-    text-indent: 10px;
+    text-indent: 17px;
 
-    font-family: "Montserrat";
-    font-size: 17px;
-
-
+    font-family: "MADE Tommy";
+    font-size: 20px;
 }
 
 .campo-textarea {
-    width: 60%;
+    width: 100%;
     margin-bottom: 30px;
     text-align: left;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    
+    
 }
 
 .campo-textarea textarea {
-    color: white;
-    background-color: #351868;
+    color: #2f2f2f;
+    background-color: #F1F1FD;
     border: none;
-    border-radius: 4px;
+    border-radius: 30px;
     padding: 10px;
 
-    font-family: "Montserrat";
-    font-size: 17px;
+    font-family: "MADE Tommy";
+    font-size: 20px;
     outline: none;
     resize: none;
+    text-indent: 17px;
+    height: 50px;
 }
 
 
@@ -371,17 +378,17 @@ header div.container-grid {
 
 #contato form button {
     height: 40px;
-    width: 60%;
+    width: 40%;
 
-    font-family: "Montserrat";
+    font-family: "MADE Tommy";
     font-size: 17px;
     font-weight: 600;
 
     color: white;
-    background-color: #f06638;
+    background-color: #4587BF;
 
     border: none;
-    border-radius: 4px;
+    border-radius: 30px;
     text-transform: uppercase;
 
     cursor: pointer;
@@ -389,11 +396,51 @@ header div.container-grid {
 }
 
 #contato form button:hover {
-    background-color: #ad4929;
+    background-color: #08be54;
 }
 
 #contato form input::placeholder,
 #contato form textarea::placeholder {
-    color: #b9b9b9;
+    color: #626262;
 }
 
+
+
+footer {
+    height: 190px;
+    background-color: #00022C;
+}
+
+footer .container-grid {
+    height: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    font-family: 'MADE Tommy';
+    font-weight: 100;
+}
+
+.redes-sociais {
+    height: 50%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    align-items: flex-end;
+}
+
+footer svg{
+    width: 90px;
+    height: 90px;
+    color: white;
+
+    cursor: pointer;
+    transition: 500ms
+}
+
+footer svg:hover{
+    color: var(--vermelho-playify-escuro);
+}
