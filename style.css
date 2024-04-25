@@ -198,14 +198,48 @@ header div.container-grid {
     font-weight: 100;
 }
 
-
 #cases {
     background-image: url(img/bolinhas.svg);
-    background-position: center;
-    background-repeat: no-repeat;
-
-    background-size: cover;
+    background-color: #05073B;
 }
+
+
+/* 
+.paralax {
+    height: 100vh;
+    overflow-x: hidden;
+    position: relative;
+    background-color: #05073B;
+}
+
+.background-paralax {
+    background-image: url(img/bolinhas.svg);
+
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+
+    /* background-repeat: no-repeat;
+    height: 100%;
+
+    animation: rotateBackground 20s linear infinite;
+}
+
+@keyframes rotateBackground {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.conteudo-paralax {
+    position: absolute;
+    top: 0;
+}
+ */
 
 
 #cases p {
@@ -351,8 +385,8 @@ header div.container-grid {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    
-    
+
+
 }
 
 .campo-textarea textarea {
@@ -424,23 +458,153 @@ footer .container-grid {
 
 .redes-sociais {
     height: 50%;
+    width: 25%;
 
     display: flex;
-    flex-direction: column;
     justify-content: space-between;
-
     align-items: flex-end;
 }
 
-footer svg{
-    width: 90px;
-    height: 90px;
+footer svg {
+    width: 50px;
+    height: 50px;
     color: white;
 
     cursor: pointer;
     transition: 500ms
 }
 
-footer svg:hover{
+footer svg:hover {
     color: var(--vermelho-playify-escuro);
+}
+
+@media screen and (max-width: 1500px) {
+    .banner img {
+        width: 650px;
+        height: 600px;
+    }
+
+    .conteudo-banner {
+        padding-top: 70px;
+    }
+
+    #sobre {
+        padding: 150px;
+    }
+
+    #sobre img {
+        position: absolute;
+        top: 119.8%;
+        left: 150px;
+        height: 72%;
+    }
+
+    .conteudo-sobre h2 {
+        padding-left: 150px;
+        padding-bottom: 20px;
+        padding-top: 65px;
+    }
+
+    .container-sobre p {
+        padding-left: 155px;
+        padding-bottom: 75px;
+    }
+}
+
+
+
+@media screen and (max-width:1400px) {
+    .conteudo-banner h2 {
+        font-size: 35px;
+    }
+
+    #sobre h2 {
+        font-size: 28px;
+    }
+
+    #sobre p {
+        font-size: 22px;
+    }
+}
+
+
+
+
+@media screen and (max-width: 1300px) {
+    .alinhamento img {
+        width: 60%;
+    }
+
+    .conteudo-banner p {
+        font-size: 20px;
+    }
+
+    .conteudo-banner h2 {
+        font-size: 35px;
+    }
+
+
+    #sobre {
+        padding: 100px;
+    }
+
+    #sobre img {
+        position: absolute;
+        top: 113%;
+        left: 100px;
+        height: 72.5%;
+    }
+   
+
+    #cases .container-cards {
+        padding: 100px;
+        gap: 50px;
+        padding-bottom: 15%;
+    }
+
+    .card {
+        width: 25%;
+    }
+
+    #contato img {
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    nav.menu {
+        width: 600px;
+    }
+
+    .alinhamento img {
+        width: 550px;
+        height: 485px;
+        margin-right: -40px;
+    }
+
+    .conteudo-banner h2 {
+        font-size: 30px;
+    }
+
+    #sobre {
+        padding: 100px;
+    }
+
+    #sobre img {
+        position: absolute;
+        top: 115.4%;
+        left: 100px;
+        height: 85.2%;
+        width: 46%;
+    }
+
+    #sobre h2 {
+        font-size: 24px;
+        padding-left: 108px;
+    }
+
+    #sobre p {
+        font-size: 20px;
+        padding-left: 108px;
+    }
 }
