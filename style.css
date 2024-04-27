@@ -133,10 +133,9 @@ header div.container-grid {
 }
 
 #sobre {
+    position: relative;
     width: 100%;
     background-color: var(--azul-playify);
-
-    padding: 200px;
 }
 
 #sobre img {
@@ -600,11 +599,7 @@ footer svg:hover {
     nav.menu {
         width: 55%;
     }
-
-    #sobre {
-
-    }
-
+    
     #sobre img {
         width: 50%;
     }
