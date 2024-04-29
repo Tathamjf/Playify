@@ -126,16 +126,20 @@ header div.container-grid {
     color: var(--vermelho-playify);
 }
 
-
 .banner img {
-    width: 710px;
-    height: 580px;
+    width: 56%;
 }
 
 #sobre {
     position: relative;
     width: 100%;
     background-color: var(--azul-playify);
+    padding: 200px;
+}
+
+#sobre .container-sobre {
+    position: relative;
+    margin-left: 100px;
 }
 
 #sobre img {
@@ -150,23 +154,21 @@ header div.container-grid {
     border-radius: 15px;
 }
 
-#sobre .container-sobre {
-    position: relative;
-    display: flex;
-    justify-content: space-between;
-}
 
 #sobre .conteudo-sobre {
     background-color: var(--roxo-playify);
 
+    padding: 150px;
+    padding-right: 70px;
+    border-radius: 15px;
+}
+
+#sobre .texto-sobre {
+    text-align: center;
     display: flex;
     flex-direction: column;
-    padding: 150px;
-    padding-right: 80px;
-
+    margin-left: 40%;
     gap: 30px;
-    text-align: right;
-    border-radius: 15px;
 }
 
 #sobre h2 {
@@ -182,7 +184,6 @@ header div.container-grid {
     font-family: "MADE Tommy";
     font-size: 24px;
     font-weight: 100;
-    margin-left: 40%;
     text-align: justify;
 }
 
@@ -233,29 +234,27 @@ header div.container-grid {
 #cases p {
     text-align: center;
 
-    font-size: 30px;
+    font-size: 40px;
     font-family: "Kdam Thmor Pro";
     color: white;
 
-    padding-top: 100px;
+    padding-top: 150px;
 
 
 }
 
 .container-cards {
     width: 100%;
+    gap: 100px;
 
     display: flex;
     justify-content: space-between;
 
-    padding: 230px;
-    padding-top: 120px;
+    padding: 150px;
 }
 
 .card {
-    height: 400px;
-    width: 250px;
-
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -265,33 +264,24 @@ header div.container-grid {
     backdrop-filter: blur(10px);
     border-radius: 20px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.292);
-
-    padding-bottom: 20px;
-    margin-bottom: 20px;
-
-    border-radius: 22px;
-
 }
 
 .card img {
-    height: 67%;
     width: 100%;
-
     border-radius: 38px;
-    padding: 20px;
+    padding: 30px;
 }
 
 .card h2 {
     text-align: center;
 
     font-family: 'Kdam Thmor Pro';
-    font-size: 24px;
+    font-size: 30px;
     font-weight: 100;
 
-    padding-bottom: 50px;
+    padding: 40px;
     color: white;
 }
-
 
 
 #contato {
@@ -300,10 +290,12 @@ header div.container-grid {
     justify-content: space-between;
 
     padding-top: 200px;
-    padding-right: 270px;
+    padding-right: 120px;
+    gap: 60px;
 }
 
 #contato .conteudo-contato {
+    width: 100%;
     text-align: center;
 }
 
@@ -347,7 +339,7 @@ header div.container-grid {
 }
 
 .campo input {
-    height: 50px;
+    height: 65px;
 
     color: #2f2f2f;
     background-color: #F1F1FD;
@@ -361,33 +353,6 @@ header div.container-grid {
     font-family: "MADE Tommy";
     font-size: 20px;
 }
-
-.campo-textarea {
-    width: 100%;
-    margin-bottom: 30px;
-    text-align: left;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-
-
-}
-
-.campo-textarea textarea {
-    color: #2f2f2f;
-    background-color: #F1F1FD;
-    border: none;
-    border-radius: 30px;
-    padding: 10px;
-
-    font-family: "MADE Tommy";
-    font-size: 20px;
-    outline: none;
-    resize: none;
-    text-indent: 17px;
-    height: 50px;
-}
-
 
 .campo input:focus,
 .campo-textarea textarea:focus {
@@ -395,12 +360,12 @@ header div.container-grid {
 }
 
 #contato form button {
-    height: 40px;
+    height: 60px;
     width: 40%;
 
     font-family: "MADE Tommy";
-    font-size: 17px;
-    font-weight: 600;
+    font-size: 20px;
+    font-weight: 100;
 
     color: white;
     background-color: #4587BF;
@@ -462,150 +427,77 @@ footer svg:hover {
     color: var(--vermelho-playify-escuro);
 }
 
-@media screen and (max-width: 1500px) {
-    .banner img {
-        width: 650px;
-        height: 600px;
-    }
-
-    .conteudo-banner {
-        padding-top: 70px;
-    }
-
-    #sobre {
-        padding: 150px;
-    }
-
-    #sobre img {
-        position: absolute;
-        top: 119.8%;
-        left: 150px;
-        height: 72%;
-    }
-
-    .conteudo-sobre h2 {
-        padding-left: 150px;
-        padding-bottom: 20px;
-        padding-top: 65px;
-    }
-
-    .container-sobre p {
-        padding-left: 155px;
-        padding-bottom: 75px;
-    }
-}
-
-
-
 @media screen and (max-width:1400px) {
-    .conteudo-banner h2 {
-        font-size: 35px;
-    }
-
-    #sobre h2 {
-        font-size: 28px;
-    }
-
-    #sobre p {
-        font-size: 22px;
+    #sobre {
+        padding: 170px;
     }
 }
-
-
-
 
 @media screen and (max-width: 1300px) {
     .alinhamento img {
-        width: 60%;
+        width: 55%;
     }
-
-    .conteudo-banner p {
-        font-size: 20px;
-    }
-
-    .conteudo-banner h2 {
-        font-size: 35px;
-    }
-
 
     #sobre {
+        padding: 80px;
+    }
+
+    .container-cards {
         padding: 100px;
     }
 
-    #sobre img {
-        position: absolute;
-        top: 100%;
+    #contato img {
+        margin: 0;
     }
-
-
-    #cases .container-cards {
-        padding: 100px;
-        gap: 50px;
-        padding-bottom: 15%;
-    }
-
-    .card {
-        width: 25%;
-    }
-
 
 }
 
 @media screen and (max-width: 1200px) {
     nav.menu {
-        width: 600px;
-    }
-
-    .alinhamento img {
-        max-width: 100%;
-        width: 65%;
-        margin-right: -10%;
-    }
-
-    .conteudo-banner h2 {
-        font-size: 35px;
-    }
-
-    #sobre {
-        padding: 100px;
+        width: 60%;
     }
 
     #sobre .conteudo-sobre {
-        padding-left: 48%;
+        padding: 100px;
+        padding-right: 45px;
     }
 
-    #sobre img {
+    #contato img {
+        position: relative;
+        right: 15%;
+    }
+
+    #contato .conteudo-contato {
         position: absolute;
-        top: 113%;
-        left: 100px;
-        height: 72%;
-        width: 45%;
-        max-width: 100%;
+        width: 40%;
+        right: 10%;
     }
-
-    #sobre h2 {
-        font-size: 24px;
-        padding-left: 108px;
-    }
-
-    #sobre p {
-        font-size: 20px;
-        padding-left: 108px;
-    }
-
 }
 
 @media screen and (max-width: 1100px) {
     nav.menu {
         width: 55%;
     }
-    
-    #sobre img {
-        width: 50%;
+
+    .alinhamneto img {
+        right: 10%;
     }
 
-    #cases .card {
-        width: 70%;
+    #sobre {
+        padding: 70px;
+    }
+
+    #sobre .conteudo-sobre {
+        padding: 60px;
+        padding-right: 30px;
+    }
+
+    #sobre h2 {
+        font-size: 25px;
+    }
+
+    #sobre p {
+        font-size: 20px;
     }
 
     #contato {
@@ -620,6 +512,7 @@ footer svg:hover {
         position: absolute;
         width: 60%;
         top: 120px;
+        right: 20%;
     }
 
     #contato h2 {
