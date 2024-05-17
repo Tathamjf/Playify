@@ -403,6 +403,15 @@ footer svg:hover {
     color: var(--vermelho-playify-escuro);
 }
 
+.menu-fechado {
+    display: none;
+}
+
+#icone-barras {
+    display: none;
+}
+
+
 @media screen and (max-width:1400px) {
     nav.menu {
         width: 55%;
@@ -447,7 +456,7 @@ footer svg:hover {
         top: 165px;
         right: 0px;
         z-index: 1;
-        display: none;
+        /* display: none; */
 
     }
 
