@@ -58,17 +58,23 @@
     <section id="cases">
                 <p>Veja alguns dos trabalhos que realizamos:</p>
                 <div class="container-cards">
-                    <div class="card">
-                        <img src="img/mercado.png" alt="Ilustração de um mercado">
-                        <h2>Supermercado</h2>
+                    <div class="card-row">
+                        <div v-for="(card, index) in cards" :key="index" :ref="`card_${index}`" @mouseover="hoverCard(index)" @mouseout="hoverCard(-1)" class="card">
+                            <img src="img/mercado.png" alt="Ilustração de um mercado" class="card-image" :class="{'selected': isSelected(index)}" :src="card.image">
+                            <h2>Supermercado</h2>
+                        </div>
                     </div>
-                    <div class="card">
-                        <img src="img/escola.png" alt="Ilustração de uma escola">
-                        <h2>Escola</h2>
+                    <div class="card-row">
+                        <div v-for="(card, index) in cards" :key="index" :ref="`card_${index}`" @mouseover="hoverCard(index)" @mouseout="hoverCard(-1)" class="card">
+                            <img src="img/escola.png" alt="Ilustração de uma escola" class="card-image" :class="{'selected': isSelected(index)}" :src="card.image">
+                            <h2>Escola</h2>
+                        </div>
                     </div>
-                    <div class="card">
-                        <img src="img/escritorio.png" alt="Ilustração de um escritório">
-                        <h2>Escritório</h2>
+                    <div class="card-row">
+                        <div v-for="(card, index) in cards" :key="index" :ref="`card_${index}`" @mouseover="hoverCard(index)" @mouseout="hoverCard(-1)" class="card">
+                            <img src="img/escritorio.png" alt="Ilustração de um escritório" class="card-image" :class="{'selected': isSelected(index)}" :src="card.image">
+                            <h2>Escritório</h2>
+                        </div>
                     </div>
                 </div>
     </section>

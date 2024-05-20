@@ -34,6 +34,8 @@ window.onresize = () => {
     iconeBarras.style.display = "none"
 }
 
+// CARROSEL
+
 
 
 // FORMULÁRIO
