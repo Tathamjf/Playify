@@ -9,6 +9,8 @@
     --roxo-playify: #3137C0;
     --azul-playify: #090F48;
     --azul-escuro: #040025;
+    --azul-rosado: #3c0063;
+    --rosa: #9814b3;
 }
 
 * {
@@ -251,13 +253,13 @@ header div.container-grid {
 .card-row {
     display: flex;
     justify-content: center;
-    align-items: center;  
+    align-items: center;
     min-width: auto;
     width: 100%;
     height: 500px;
-  }
-  
-  .card {
+}
+
+.card {
     position: relative;
     background-color: #232f9c40;
     height: 400px;
@@ -269,14 +271,15 @@ header div.container-grid {
     border-radius: 20px;
     backdrop-filter: blur(10px);
     transition: height 0.3s, box-shadow 0.3s;
-  }
-  
-  .card:hover {
+    cursor: pointer;
+}
+
+.card:hover {
     height: 410px;
-    box-shadow: 20px 20px 40px 0px rgba(0,0,0,0.5);
-  }
-  
-  .card-image {
+    box-shadow: 20px 20px 40px 0px rgba(0, 0, 0, 0.5);
+}
+
+.card-image {
     /* center horizontally overflown image */
     position: absolute;
     margin: auto;
@@ -284,15 +287,17 @@ header div.container-grid {
     height: 220px;
     min-width: 80%;
     transition: height 0.3s, opacity 0.3s;
-  }
-  .card-image.selected {
+}
+
+.card-image.selected {
     height: 410px;
     opacity: 0.3;
-  }
+}
 
 
 .card-row h2 {
     text-align: center;
+    cursor: pointer;
 
     font-family: 'Kdam Thmor Pro';
     font-size: 30px;
@@ -531,7 +536,9 @@ footer svg:hover {
     #contato .conteudo-contato {
         position: absolute;
         width: 40%;
-        right: 10%;
+        margin-right: 50%;
+        margin-left: 50%;
+        /* right: 10%; */
     }
 }
 
@@ -570,7 +577,7 @@ footer svg:hover {
         position: absolute;
         width: 60%;
         top: 50px;
-        right: 20%;
+        /* right: 20%; */
     }
 
     #contato h2 {
@@ -581,7 +588,7 @@ footer svg:hover {
     #contato form {
         padding: 60px;
 
-        background-color: #232f9c40;
+        background-color: none;
         backdrop-filter: blur(15px);
         border-radius: 20px;
         box-shadow: 0 4px 30px rgba(0, 0, 0, 0.647);
@@ -598,10 +605,16 @@ footer svg:hover {
     .campo-textarea {
         width: 100%;
         margin-bottom: 15%;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
 
 @media screen and (max-width:1000px) {
+    #contato form {
+        background-color: none;
+    }
+
     .alinhamento img {
         width: 70%;
         left: 17%;
@@ -619,7 +632,28 @@ footer svg:hover {
 
     #contato {
         height: 1000px;
+        background: linear-gradient(-45deg, var(--roxo-playify), var(--azul-rosado), var(--azul-escuro), var(--azul-playify));
+        background-size: 400% 400%;
+        animation: gradient 15s ease infinite;
+        background-color: none;
     }
+
+    @keyframes gradient {
+        0% {
+            background-position: 0% 50%;
+        }
+
+        50% {
+            background-position: 100% 50%;
+        }
+
+        100% {
+            background-position: 0% 50%;
+        }
+    }
+
+
+
 
     #contato img {
         display: none;
@@ -701,6 +735,10 @@ footer svg:hover {
         font-size: 30px;
     }
 
+    #contato .conteudo-contato {
+        width: 80%;
+    }
+
     #contato img {
         width: 100%;
     }
@@ -735,10 +773,11 @@ footer svg:hover {
         gap: 40px;
     }
 
+    /* 
     #contato .conteudo-contato {
-        width: 80%;
-        right: 10%;
-    }
+        /* width: 100%;
+        /* right: 10%; */
+    /* } */
 
     #contato form label {
         font-size: 20px;
@@ -819,7 +858,7 @@ footer svg:hover {
     }
 
     #contato form {
-        width: 90%;
+        /* width: 90%; */
         padding: 22px;
     }
 
@@ -828,12 +867,9 @@ footer svg:hover {
         font-size: 15px;
     }
 
-    #contato .conteudo-contato {
-        right: 20px;
-    }
 
     #contato h2 {
-        margin-right: 27%;
+        /* margin-right: 27%; */
         font-size: 30px;
     }
 
